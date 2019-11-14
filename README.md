@@ -2,6 +2,13 @@
 This trading strategy is based on the momentum paper published by AQR in the 1990's. I used tushare as the datasource and pyalgotrade as the backtesting platform.
 The strategy file needs to run with modified pyalgotrade source code. Request to xcy9999@hotmail.com if needed.
 
+# Notes:
+- Daily k bars are combined into monthly k bars
+- All orders are sent using the market price, but some may not be filled due to volumes are messed up in monthly k bars
+- The strategy picks up 3 best pct_chg stocks in one month with some outstanding share and EPS requirements to filter the population, and hold for a month to measure the portfolio performance
+
+# Portfolio performance in 2019
+
 Month	Best performing SH/SZ stocks with specified OS > 20 million and EPS > 1	win pct change	Return after holding for 1 month
 01/2019	601155	23.9%	110.7%
 	000858	18.5%	
