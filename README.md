@@ -1,6 +1,5 @@
-# Stock_Strategy
-This trading strategy is based on the momentum paper published by AQR in the 1990's. I used tushare as the datasource and pyalgotrade as the backtesting platform.
-The strategy file needs to run with modified pyalgotrade source code. Request to xcy9999@hotmail.com if needed.
+# My_Stock_Momemtum_Strategy
+This trading strategy is based on the momentum paper published by AQR in the 1990's. The strategy file needs to run with modified pyalgotrade source code. Request to xcy9999@hotmail.com if needed. I used "Tushare" as my datasource and pyalgotrade as the backtesting platform. After washing the raw financial data, I grouped daily k bars to monthly k bars for this strategy, which was devised to pick the three best performing stocks in one month with Outstanding_Share and EPS requirements to filter the entire stock population. Then hold the position from trading at market price in maximum volume for a month to measure the portfolio performance. Finally the PnL result turned out to be randomly distributed when running against year 2018-2019.
 
 # Notes:
 - Daily k bars are combined into monthly k bars
